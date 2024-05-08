@@ -23,7 +23,7 @@ while True:
             while m_rut:
                 try:
                     rut = int(input("Ingresa rut del paciente:\n"))
-                    if rut >=5000000 and rut <=999999999:
+                    if rut >=5000000 or rut <=999999999:
                         break
                     else:
                         input("Ingresa un rut dentro del rango 5000000 y 99999999.\n")
@@ -34,21 +34,21 @@ while True:
             while m_edad:
                 try:
                     edad=int(input("Ingresa edad del paciente:\n"))
-                    if edad >= 0 and edad <111:
+                    if edad >= 0 or edad <111:
                         break
                     else:
                         input("Ingresa la edad dentro del rango 0 a 110")
                 except:
-                    print("ingresa solo numeros.")
+                    print("Error: ingresa solo numeros.")
             os.system("cls")        
             
             direccion=input("Ingresa direccion del paciente:\n")
             while direccion == "":
-                direccion=input("Direccion del paciente no puede estar vacio")
+                direccion=input("Error: Direccion del paciente no puede estar vacio")
             
             gender = input("Ingresa el genero del paciente:\n")
             while gender not in "fmFM" :
-                gender = input("ingresa un genero como f o m.\n")
+                gender = input("Error: ingresa un genero como f o m.\n")
             os.system("cls")    
             
             ps = input("Ingresa tu ps: isapre o fonasa.\n")
