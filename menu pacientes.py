@@ -45,15 +45,20 @@ while True:
             direccion=input("Ingresa direccion del paciente:\n")
             while direccion == "":
                 direccion=input("Error: Direccion del paciente no puede estar vacio")
-            
+
             gender = input("Ingresa el genero del paciente:\n")
             while gender not in "fmFM" :
                 gender = input("Error: ingresa un genero como f o m.\n")
+            #b. 
+            #while not gender != "f" and gender != "F" and gender != "m" and gender != "M":
+            #    gender = input("Error: ingresa un genero como f o m.\n")
             os.system("cls")    
-            
             ps = input("Ingresa tu ps: isapre o fonasa.\n")
             while ps not in "isaprefonasaISAPREFONASA" :
                 ps = print("Eligue isapre o fonasa")
+            #b. 
+            #while not gender != "f" and gender != "F" and gender != "m" and gender != "M":
+            #    gender = input("Error: ingresa un genero como f o m.\n")
             os.system("cls")
             
             email = input("Ingresa tu email, debe contener @ y un dominio exsiste\nEj: gmail.com, duocuc.cl\n")
